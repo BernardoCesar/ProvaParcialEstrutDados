@@ -1,4 +1,4 @@
-package exercicio2;
+package ProvaParcialEstrutDados.exercicio2;
 
 public class No {
 	Motorista motorista;

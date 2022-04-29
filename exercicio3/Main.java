@@ -1,11 +1,11 @@
-package exercicio3;
+package ProvaParcialEstrutDados.exercicio3;
 
 public class Main {
 	public static void main(String[] args) {
 		
 		Lista lista = new Lista();
 		
-		// inserção dos elementos na lista
+		// inserï¿½ï¿½o dos elementos na lista
 		lista.inserir(1);
 		lista.inserir(2);
 		lista.inserir(3);

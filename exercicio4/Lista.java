@@ -1,16 +1,16 @@
-package exercicio4;
+package ProvaParcialEstrutDados.exercicio4;
 
 public class Lista {
 	No inicio;
 	No fim;
 	
-	// método para inserir um elemento na lista.
-	// a inserção deve manter a lista ordenada (ordem crescente)
+	// mï¿½todo para inserir um elemento na lista.
+	// a inserï¿½ï¿½o deve manter a lista ordenada (ordem crescente)
 	public void inserir(int dado) {
 		
 	}
 	
-	// método para imprimir os elementos da lista
+	// mï¿½todo para imprimir os elementos da lista
 	public void imprimir() {
 		No aux = inicio;
 		while(aux != null) {

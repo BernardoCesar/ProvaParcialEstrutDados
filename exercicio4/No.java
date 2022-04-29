@@ -1,4 +1,4 @@
-package exercicio4;
+package ProvaParcialEstrutDados.exercicio4;
 
 public class No {
 	int dado;

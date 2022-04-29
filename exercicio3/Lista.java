@@ -1,10 +1,10 @@
-package exercicio3;
+package ProvaParcialEstrutDados.exercicio3;
 
 public class Lista {
 
 	No inicio, fim;
 	
-	// método para inserir um elemento na lista
+	// mï¿½todo para inserir um elemento na lista
 	public void inserir(int dado) {
 		No aux = new No(dado);
 		if(inicio == null) {
@@ -16,7 +16,7 @@ public class Lista {
 		inicio = aux;		
 	}
 	
-	// método para imprimir os elementos da lista
+	// mï¿½todo para imprimir os elementos da lista
 	public void imprimir() {
 		No aux = inicio;
 		while(aux != null) {
