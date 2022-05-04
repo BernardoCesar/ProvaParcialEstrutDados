@@ -15,7 +15,32 @@ public class Lista {
 	
 	//esse m�todo dever� ser implementado de acordo com o enunciado do exerc�cio
 	private void inserirPrioridade(No aux) {
-		
+		boolean achou=false;
+		int contador=0;
+		No aux2=inicio;
+
+		while(aux2!=null){
+			if(aux2.cor.equalsIgnoreCase("amarelo")){
+				contador++;
+				achou=true;
+			}
+			aux2=aux2.prox;
+		}
+
+		if(inicio==null){
+			inserirFim(aux);
+		}else if(achou==false){
+			aux.prox=inicio;
+			inicio=aux;
+			
+		}else if(achou==true){
+			aux2=inicio;
+			for(int i=0; i<contador-1; i++){
+				aux2=aux2.prox;
+			}
+			aux.prox=aux2.prox;
+			aux2.prox=aux;
+		}	
 		
 	}
 	
