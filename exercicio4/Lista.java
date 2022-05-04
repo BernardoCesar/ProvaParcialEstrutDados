@@ -8,8 +8,6 @@ public class Lista {
 	// a inser��o deve manter a lista ordenada (ordem crescente)
 	public void inserir(int dado) {
 		No aux = new No(dado);
-		No aux2=inicio.dir;
-
 		if(inicio==null){
 			inicio=aux;
 			fim=aux;
@@ -17,17 +15,19 @@ public class Lista {
 			inicio.esq=aux;
 			aux.dir=inicio;
 			inicio=aux;
-		}else if(aux.dado>fim.dado){
+		}else if(aux.dado>=fim.dado){
 			fim.dir = aux;
 			aux.esq = fim;
 			fim=aux;
 		}else{
-			while(aux2.dir!=fim){
+			No aux2=inicio;
+			while(aux2!=null){
 				if(aux.dado<aux2.dado){
 					aux2.esq.dir=aux;
 					aux.dir=aux2;
 					aux.esq=aux2.esq;	
 					aux2.esq=aux;
+					break;
 				}
 				aux2=aux2.dir;
 			}

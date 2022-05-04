@@ -20,7 +20,16 @@ public class Main {
 	}
 	
 	public static void inverter(Lista lista) {
-		
+		//inicio->fim
+		No aux=lista.fim;
+		lista.inicio=aux;
+
+		while(aux!=null){
+			aux.dir=aux.esq;
+			aux=aux.esq;
+		}
+
+
 		
 	}
 }
